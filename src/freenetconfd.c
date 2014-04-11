@@ -53,7 +53,7 @@ main(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 
-	LOG("entering main loop\n");
+	LOG("freenetconfd is listening on address:'%s', port:'%s'\n", config.addr, config.port);
 
 	/* main loop */
 	uloop_run();
